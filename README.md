@@ -18,30 +18,34 @@ sudo mv tt /usr/local/bin
 
 ### Usage
 - see version
+
     ```
     translate git:(master) tt version 
     tt version: 0.1
     go version: go1.7.4
     os/arch:    linux/amd64
     ```
+
 - new a template post with default arguments
+
     ```
     translate git:(master) tt new
     file "00-example.md" created successfully on "/home/geek/workspace/githubwp/translate/2017"!
     ```
 - new a template post with customed arguments
-  ```
-  ➜  translate git:(master) ✗ tt new -f adolphlwq-tt -n 10 -y 2017 -t "dive into python"
-  file "10-adolphlwq-tt.md" created successfully on "/home/geek/workspace/githubwp/translate/2017"!
-  ➜  translate git:(master) ✗ cat 2017/10-adolphlwq-tt.md 
-  # dive into python
 
-  ## 说明
-  - [原文链接]()
-  - [翻译：@adolphlwq](https://github.com/adolphlwq)
-  - [项目地址](https://github.com/adolphlwq/translate)
-  - <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/80x15.png" />
-  ```
+    ```
+    ➜  translate git:(master) ✗ tt new -f adolphlwq-tt -n 10 -y 2017 -t "dive into python"
+    file "10-adolphlwq-tt.md" created successfully on "/home/geek/workspace/githubwp/translate/2017"!
+    ➜  translate git:(master) ✗ cat 2017/10-adolphlwq-tt.md 
+    # dive into python
+
+    ## 说明
+    - [原文链接]()
+    - [翻译：@adolphlwq](https://github.com/adolphlwq)
+    - [项目地址](https://github.com/adolphlwq/translate)
+    - <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/80x15.png" />
+    ```
 
 ### Options
 ```
