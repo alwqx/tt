@@ -8,10 +8,11 @@ import (
 )
 
 const (
+	// tt default version
 	TT_VERSION = "0.1"
 )
 
-type VersionInfo struct {
+type versionInfo struct {
 	TTVersion string
 	GoVersion string
 	OSArch    string
@@ -34,8 +35,8 @@ func init() {
 	RootCmd.AddCommand(versionCmd)
 }
 
-func getTTVersion() *VersionInfo {
-	var versionInfo = &VersionInfo{
+func getTTVersion() *versionInfo {
+	var versionInfo = &versionInfo{
 		TTVersion: TT_VERSION,
 		GoVersion: runtime.Version(),
 		OSArch:    getOSArch(),
