@@ -8,8 +8,8 @@ import (
 )
 
 const (
-	// tt default version
-	TT_VERSION = "0.1"
+	//TTVERSION tt default version
+	TTVERSION = "0.1.1"
 )
 
 type versionInfo struct {
@@ -37,7 +37,7 @@ func init() {
 
 func getTTVersion() *versionInfo {
 	var versionInfo = &versionInfo{
-		TTVersion: TT_VERSION,
+		TTVersion: TTVERSION,
 		GoVersion: runtime.Version(),
 		OSArch:    getOSArch(),
 	}
