@@ -11,7 +11,7 @@ go install github.com/adolphlwq/tt
 ```
 else
 ```
-wget https://github.com/adolphlwq/tt/releases/download/0.1/tt
+wget https://github.com/adolphlwq/tt/releases/download/0.2/tt
 sudo chmod +x tt
 sudo mv tt /usr/local/bin
 ```
@@ -44,23 +44,37 @@ sudo mv tt /usr/local/bin
     - [原文链接]()
     - [翻译：@adolphlwq](https://github.com/adolphlwq)
     - [项目地址](https://github.com/adolphlwq/translate)
-    - <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/80x15.png" />
+    - [tt](https://github.com/adolphlwq/tt)：自动生成翻译模板
+    - 用时:
+    - <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/80x15.png" /></a>
     ```
 
 ### Options
-```
-create a new template file.
+- new a post
+    ```
+    create a new template file.
 
-Usage:
-  tt new [flags]
+    Usage:
+    tt new [flags]
 
-Flags:
-  -f, --file-name string   file name of your post (default "example")
-  -n, --number string      number of your post (default "00")
-  -t, --title string       title of your post (default "example")
-  -y, --year string        year of directory contains posts (default "2017")
-```
+    Flags:
+    -f, --file-name string   file name of your post (default "example")
+    -n, --number string      number of your post (default "00")
+    -t, --title string       title of your post (default "example")
+    -y, --year string        year of directory contains posts (default "2017")
+    ```
+- list issue (defalut adolphlwq/translate)
+    ```
+    Usage:
+    tt issue [flags]
+
+    Flags:
+    -r, --repo string    name of your repo. (default "translate")
+    -s, --state string   state of issue to list. (default "open")
+    -u, --user string    short name of your github account. (default "adolphlwq")
+    ```
 
 ## TODOs
-- [X] new: new a post
-- [X] version: show version info
+- [X] new: new a post.
+- [X] version: show version info.
+- [X] issue: list issue.
