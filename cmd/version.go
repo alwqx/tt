@@ -9,7 +9,7 @@ import (
 
 const (
 	// tt default version
-	TT_VERSION = "0.1"
+	TT_VERSION = "0.2"
 )
 
 type versionInfo struct {
