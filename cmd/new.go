@@ -6,9 +6,8 @@ import (
 	"io"
 	"os"
 	"path/filepath"
-	"text/template"
-
 	"strings"
+	"text/template"
 
 	"github.com/spf13/cobra"
 )
@@ -61,7 +60,7 @@ func exists(path string) bool {
 }
 
 func init() {
-	newCmd.Flags().StringVarP(&year, "year", "y", "2017", "year of directory contains posts")
+	newCmd.Flags().StringVarP(&year, "year", "y", "2019", "year of directory contains posts")
 	newCmd.Flags().StringVarP(&number, "number", "n", "00", "number of your post")
 	newCmd.Flags().StringVarP(&fileName, "file-name", "f", "example", "file name of your post")
 	newCmd.Flags().StringVarP(&title, "title", "t", "example", "title of your post")
@@ -73,7 +72,7 @@ func createPostFile(dir, fileName string) {
 	
 ## 说明
 - [原文链接]()
-- [翻译：@adolphlwq](https://github.com/adolphlwq)
+- [翻译：@AdolphLWQ](https://github.com/adolphlwq)
 - [项目地址](https://github.com/adolphlwq/translate)
 - [tt](https://github.com/adolphlwq/tt)：自动生成翻译模板
 - 用时:
