@@ -46,7 +46,7 @@ func qerr(input interface{}) {
 	os.Exit(-1)
 }
 
-//Check if a file or directory exists.
+// Check if a file or directory exists.
 func exists(path string) bool {
 	_, err := os.Stat(path)
 	if err == nil {
@@ -72,15 +72,14 @@ func createPostFile(dir, fileName string) {
 	
 ## 说明
 - [原文链接]()
-- [翻译：@AdolphLWQ](https://github.com/adolphlwq)
-- [项目地址](https://github.com/adolphlwq/translate)
-- [tt](https://github.com/adolphlwq/tt)：自动生成翻译模板
+- [翻译：@AdolphLWQ](https://github.com/alwqx)
+- [项目地址](https://github.com/alwqx/translate)
+- [tt](https://github.com/alwqx/tt)：自动生成翻译模板
 - 用时:
 - <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/80x15.png" /></a>
 
 `
-	var data map[string]interface{}
-	data = make(map[string]interface{})
+	data := make(map[string]interface{})
 	data["title"] = title
 
 	err := writeTemplateToFile(filepath.Join(dir, fileName), tmpl, data)
@@ -88,8 +87,8 @@ func createPostFile(dir, fileName string) {
 	if err != nil {
 		qerr(err)
 	}
-
-	fmt.Println(fmt.Sprintf("file \"%s\" created successfully on \"%s\"!", fileName, dir))
+	str := fmt.Sprintf("file \"%s\" created successfully on \"%s\"!", fileName, dir)
+	fmt.Println(str)
 }
 
 func writeTemplateToFile(filePath string, tmpl string, data interface{}) error {
@@ -129,7 +128,7 @@ func saveReaderToDisk(filePath string, r io.Reader) error {
 	return err
 }
 
-func formatFileName(number, fileNname string) string {
+func formatFileName(number, fileName string) string {
 	if strings.HasSuffix(fileName, ".md") {
 		return number + "-" + fileName
 	}

@@ -10,12 +10,12 @@ import (
 // RootCmd represents the base command when called without any subcommands.
 var RootCmd = &cobra.Command{
 	Use:   "tt",
-	Short: "A supplementary tool for github.com/adolphlwq/translate.",
+	Short: "A supplementary tool for github.com/alwqx/translate.",
 	Long: `tt is a CLI for generating template Markdown post.
-It is developed to quickly generate template post for https://github.com/adolphlwq/translate repo.`,
+It is developed to quickly generate template post for https://github.com/alwqx/translate repo.`,
 }
 
-//Execute adds all child commands to the root command sets flags appropriately.
+// Execute adds all child commands to the root command sets flags appropriately.
 func Execute() {
 	if err := RootCmd.Execute(); err != nil {
 		fmt.Println(err)

@@ -42,7 +42,7 @@ func issueRun(cmd *cobra.Command, args []string) {
 }
 
 func init() {
-	issueCmd.Flags().StringVarP(&user, "user", "u", "adolphlwq", "short name of your github account.")
+	issueCmd.Flags().StringVarP(&user, "user", "u", "alwqx", "short name of your github account.")
 	issueCmd.Flags().StringVarP(&repo, "repo", "r", "translate", "name of your repo.")
 	issueCmd.Flags().StringVarP(&state, "state", "s", "open", "state of issue to list.")
 	RootCmd.AddCommand(issueCmd)
