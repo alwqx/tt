@@ -3,7 +3,6 @@ module tt
 go 1.20
 
 require (
-	github.com/adolphlwq/tt v0.0.0-20190113064029-668c85d1c130
 	github.com/google/go-github v3.0.1-0.20170309002606-553fda401c08+incompatible
 	github.com/spf13/cobra v0.0.0-20170223131251-92ea23a837e6
 )

@@ -1,5 +1,3 @@
-github.com/adolphlwq/tt v0.0.0-20190113064029-668c85d1c130 h1:ryzOzDWZLfH/PjDyFNWUM5sb/JssVZXZC8hqZPF8udE=
-github.com/adolphlwq/tt v0.0.0-20190113064029-668c85d1c130/go.mod h1:mVLfqeqXMMKZom+xrJyK85o7H6bbUt+HPNFbdy2b3oU=
 github.com/google/go-github v3.0.1-0.20170309002606-553fda401c08+incompatible h1:uBVYibZklade/5/tYxfiqVmzVL3XgdkFf4VUnBCjcZE=
 github.com/google/go-github v3.0.1-0.20170309002606-553fda401c08+incompatible/go.mod h1:zLgOLi98H3fifZn+44m+umXrS52loVEgC2AApnigrVQ=
 github.com/google/go-querystring v0.0.0-20170111101155-53e6ce116135 h1:zLTLjkaOFEFIOxY5BWLFLwh+cL8vOBW4XJ2aqLE/Tf0=
