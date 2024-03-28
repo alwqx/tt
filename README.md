@@ -11,7 +11,7 @@ A tool for generating template Markdown file for [translate](https://github.com/
 If you have installed [Golang](https://golang.org)
 
 ```
-go install github.com/alwqx/tt
+go install github.com/alwqx/tt@latest
 ```
 
 else
