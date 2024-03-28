@@ -17,7 +17,7 @@ go install github.com/alwqx/tt@latest
 else
 
 ```
-wget https://github.com/alwqx/tt/releases/download/0.2/tt
+wget https://github.com/alwqx/tt/releases/download/0.3.0/tt
 sudo chmod +x tt
 sudo mv tt /usr/local/bin
 ```
@@ -28,9 +28,9 @@ sudo mv tt /usr/local/bin
 
   ```
   translate git:(master) tt version
-  tt version: 0.1
-  go version: go1.7.4
-  os/arch:    linux/amd64
+  tt version: 0.3.0
+  go version: go1.20.3
+  os/arch:    darwin/arm64
   ```
 
 - new a template post with default arguments
