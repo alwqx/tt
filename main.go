@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/alwq/tt/cmd"
+	"github.com/alwqx/tt/cmd"
 )
 
 func main() {

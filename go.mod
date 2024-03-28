@@ -1,4 +1,4 @@
-module github.com/alwq/tt
+module github.com/alwqx/tt
 
 go 1.20
 
